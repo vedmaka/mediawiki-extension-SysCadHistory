@@ -1,0 +1,27 @@
+{
+	"name": "SysCadHistory",
+	"author": [
+		"Alexey"
+	],
+	"license-name": "MIT",
+	"url": "https://www.mediawiki.org/wiki/Extension:SysCadHistory",
+	"descriptionmsg": "syscadhistory-desc",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"SysCadHistory": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"SkinTemplateNavigation::Universal": [
+		    "SysCadHistoryHooks::Universal"
+		],
+		"MediaWikiPerformAction": [
+			"SysCadHistoryHooks::MediaWikiPerformAction"
+		]
+	},
+	"AutoloadClasses": {
+		"SysCadHistoryHooks": "SysCadHistory.hooks.php"
+	},
+	"manifest_version": 1
+}
